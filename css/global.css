@@ -1,0 +1,69 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* by setting body to fixed and all values to 0
+ we can set elements clientHeight and width easier */
+ body{
+    position: fixed;
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+}
+
+#chart{
+    display: block;
+    margin: auto;
+}
+
+#title{
+    border: 1px solid red;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+#GDP{
+    font-size: 1.75em;
+    fill:#635F5D;
+}
+
+tspan{
+    font-size: .6em;
+    fill:#635F5D;
+}
+
+
+#moreInfo{
+    font-size: 1.15em;
+    fill:#635F5D;
+}
+
+
+.bar{
+    fill: steelblue;
+}
+.bar:hover{
+    fill: #2371a5;
+}
+
+
+
+/* target the text of the chart */
+.tick text{
+    font-size: 1.5em;
+    fill:#635F5D
+}
+
+/* select the lines on the chart */
+.tick line{
+    stroke:#C0C0BB
+}
+.domain{
+    stroke:#C0C0BB
+}
